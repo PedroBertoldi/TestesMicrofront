@@ -1,0 +1,78 @@
+{
+  "name": "microfrontends-with-angular",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "npx jest --passWithNoTests",
+    "lint": "ng lint",
+    "prettier": "npx prettier --write .",
+    "prettier-check": "npx prettier --check .",
+    "check": "npm run lint && npm run test && npm run prettier-check",
+    "package": "npm run build-lib && npm run npm-pack"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/projects/train-platform/src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "clearMocks": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 30,
+        "functions": 30,
+        "lines": 30,
+        "statements": 30
+      }
+    }
+  },
+  "dependencies": {
+    "@angular/common": "~13.3.10",
+    "@angular/compiler": "~13.3.10",
+    "@angular/core": "~13.3.10",
+    "@angular/forms": "^13.3.10",
+    "@angular/platform-browser": "~13.3.10",
+    "@angular/platform-browser-dynamic": "~13.3.10",
+    "@angular/router": "~13.3.10",
+    "@ngneat/hot-toast": "^4.1.0",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^6.0.0",
+    "ngx-elements-router": "^0.1.3",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.11.5"
+  },
+  "devDependencies": {
+    "@angular-builders/jest": "^13.0.4",
+    "@angular-devkit/build-angular": "~13.3.7",
+    "@angular-eslint/builder": "13.2.1",
+    "@angular-eslint/eslint-plugin": "13.2.1",
+    "@angular-eslint/eslint-plugin-template": "13.2.1",
+    "@angular-eslint/schematics": "13.2.1",
+    "@angular-eslint/template-parser": "13.2.1",
+    "@angular/cli": "~13.3.7",
+    "@angular/compiler-cli": "~13.3.10",
+    "@angular/elements": "^13.3.10",
+    "@babel/core": "^7.12.3",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.17.0",
+    "@typescript-eslint/parser": "5.17.0",
+    "eslint": "^8.12.0",
+    "jest": "^28.1.0",
+    "ng-packagr": "^13.3.1",
+    "ngx-build-plus": "^13.0.1",
+    "prettier": "^2.1.2",
+    "protractor": "~7.0.0",
+    "ts-jest": "^28.0.3",
+    "ts-node": "~8.3.0",
+    "typescript": "~4.6.4"
+  }
+}

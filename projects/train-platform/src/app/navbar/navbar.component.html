@@ -1,0 +1,29 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/" routerLinkActive="active-nav-item" [routerLinkActiveOptions]="{exact: true}">{{ "navbar.home" | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/bookings" routerLinkActive="active-nav-item" [routerLinkActiveOptions]="{exact: true}">{{ "navbar.myBookings" | translate }}</a>
+    </li>
+  </ul>
+  <div class="page-options">
+    <div>
+      <label>{{ "navbar.theme.text" | translate }}</label>
+      <select [ngModel]="theme" (ngModelChange)="updateTheme($event)">
+        <option value="light">{{ "navbar.theme.light" | translate }}</option>
+        <option value="dark">{{ "navbar.theme.dark" | translate }}</option>
+      </select>
+    </div>
+    <div>
+      <label>{{ "navbar.language.text" | translate }}</label>
+      <select [ngModel]="language" (ngModelChange)="updateLanguage($event)">
+        <option value="en">{{ "navbar.language.en" | translate }}</option>
+        <option value="de">{{ "navbar.language.de" | translate }}</option>
+      </select>
+    </div>
+    <div>
+-      <button (click)="showToast()">🚂</button>
+-    </div>
+  </div>
+</nav>

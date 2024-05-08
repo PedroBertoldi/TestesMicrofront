@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "home": "Start",
+    "myBookings": "Meine Buchungen",
+    "language": {
+      "text": "Sprache",
+      "en": "Englisch",
+      "de": "Deutsch"
+    },
+    "theme": {
+      "text": "Farbe",
+      "light": "Hell",
+      "dark": "Dunkel"
+    }
+  },
+  "journey": {
+    "bookAction": "Buchen"
+  }
+}

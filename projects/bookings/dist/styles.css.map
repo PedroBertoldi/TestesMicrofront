@@ -1,0 +1,1 @@
+{"version":3,"file":"styles.css","mappings":";;;AAAA;EACE,SAAS;AACX;;AAEA;EACE,YAAY;AACd","sources":["./projects/bookings/src/styles.css"],"sourcesContent":["body {\r\n  margin: 0;\r\n}\r\n\r\na {\r\n  color: unset;\r\n}\r\n"],"names":[],"sourceRoot":"webpack:///"}

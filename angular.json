@@ -1,0 +1,235 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "train-platform": {
+      "projectType": "application",
+      "root": "projects/train-platform",
+      "sourceRoot": "projects/train-platform/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "projects/train-platform/dist",
+            "index": "projects/train-platform/src/index.html",
+            "main": "projects/train-platform/src/main.ts",
+            "polyfills": "projects/train-platform/src/polyfills.ts",
+            "tsConfig": "projects/train-platform/tsconfig.app.json",
+            "aot": true,
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "optimization": false,
+            "assets": [
+              "projects/train-platform/src/favicon.ico",
+              "projects/train-platform/src/assets"
+            ],
+            "styles": [
+              "projects/train-platform/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/train-platform/src/environments/environment.ts",
+                  "with": "projects/train-platform/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              },
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "train-platform:build",
+            "proxyConfig": "proxy.conf.json"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "train-platform:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "train-platform:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/train-platform/**/*.ts",
+              "projects/train-platform/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "bookings": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/bookings",
+      "sourceRoot": "projects/bookings/src",
+      "prefix": "mf",
+      "architect": {
+        "build": {
+          "builder": "ngx-build-plus:build",
+          "options": {
+            "singleBundle": true,
+            "outputHashing": "none",
+            "outputPath": "projects/bookings/dist",
+            "index": "projects/bookings/src/index.html",
+            "main": "projects/bookings/src/main.ts",
+            "polyfills": "projects/bookings/src/polyfills.ts",
+            "tsConfig": "projects/bookings/tsconfig.app.json",
+            "aot": true,
+            "buildOptimizer": false,
+            "optimization": false,
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "sourceMap": true,
+            "namedChunks": true,
+            "assets": [
+              "projects/bookings/src/favicon.ico",
+              "projects/bookings/src/assets"
+            ],
+            "styles": [
+              "projects/bookings/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              },
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/bookings/src/environments/environment.ts",
+                  "with": "projects/bookings/src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "local-web-components": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/bookings/src/environments/environment.ts",
+                  "with": "projects/bookings/src/environments/environment.local-web-components.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bookings:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bookings:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "bookings:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/bookings/**/*.ts",
+              "projects/bookings/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "train-platform"
+}
