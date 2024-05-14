@@ -190,7 +190,7 @@ class BookingListComponent {
     }
 }
 BookingListComponent.ɵfac = function BookingListComponent_Factory(t) { return new (t || BookingListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_booking_service__WEBPACK_IMPORTED_MODULE_0__.BookingService)); };
-BookingListComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: BookingListComponent, selectors: [["mf-booking-list"]], decls: 3, vars: 2, consts: [[4, "ngIf", "ngIfElse"], ["noBookings", ""], [4, "ngFor", "ngForOf"], ["routerLink", "/bookings/journey/42"]], template: function BookingListComponent_Template(rf, ctx) { if (rf & 1) {
+BookingListComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: BookingListComponent, selectors: [["mf-booking-list"]], decls: 3, vars: 2, consts: [[4, "ngIf", "ngIfElse"], ["noBookings", ""], [4, "ngFor", "ngForOf"], ["routerLink", "/journey/42"]], template: function BookingListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, BookingListComponent_ul_0_Template, 2, 1, "ul", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, BookingListComponent_ng_template_1_Template, 11, 3, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
@@ -218,9 +218,8 @@ __webpack_require__.r(__webpack_exports__);
 class BookingComponent {
 }
 BookingComponent.ɵfac = function BookingComponent_Factory(t) { return new (t || BookingComponent)(); };
-BookingComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BookingComponent, selectors: [["mf-booking"]], decls: 2, vars: 0, template: function BookingComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "batata");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "router-outlet");
+BookingComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BookingComponent, selectors: [["mf-booking"]], decls: 1, vars: 0, template: function BookingComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
     } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterOutlet], encapsulation: 2 });
 
 
@@ -237,17 +236,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "BookingModule": () => (/* binding */ BookingModule)
 /* harmony export */ });
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 6362);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 8784);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ 587);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ 318);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 2816);
-/* harmony import */ var _ngneat_hot_toast__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ngneat/hot-toast */ 8558);
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ 8784);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ 587);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/platform-browser */ 318);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ 2816);
+/* harmony import */ var _ngneat_hot_toast__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ngneat/hot-toast */ 8558);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ngx-translate/core */ 3935);
 /* harmony import */ var _booking_form_booking_form_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./booking-form/booking-form.component */ 9378);
 /* harmony import */ var _booking_list_booking_list_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./booking-list/booking-list.component */ 2658);
 /* harmony import */ var _booking_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./booking.component */ 8488);
 /* harmony import */ var _translation_loader_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./translation-loader.provider */ 3984);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _test_list_teste_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./test-list/teste-list.component */ 8494);
+/* harmony import */ var _micro_frontend_noop_location_strategy__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../micro-frontend/noop-location-strategy */ 3194);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 3184);
+
+
 
 
 
@@ -266,17 +269,26 @@ __webpack_require__.r(__webpack_exports__);
 class BookingModule {
 }
 BookingModule.ɵfac = function BookingModule_Factory(t) { return new (t || BookingModule)(); };
-BookingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({ type: BookingModule });
-BookingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ imports: [[
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule,
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule,
+BookingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: BookingModule });
+BookingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ providers: [
+        {
+            provide: _angular_common__WEBPACK_IMPORTED_MODULE_7__.LocationStrategy,
+            useClass: _micro_frontend_noop_location_strategy__WEBPACK_IMPORTED_MODULE_5__.NoopLocationStrategy
+        }
+    ], imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__.BrowserModule,
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HttpClientModule,
             _angular_common__WEBPACK_IMPORTED_MODULE_7__.CommonModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormsModule,
-            _angular_router__WEBPACK_IMPORTED_MODULE_9__.RouterModule.forRoot([
+            _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormsModule,
+            _angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule.forRoot([
                 {
                     path: 'journey/:journeyId',
                     component: _booking_form_booking_form_component__WEBPACK_IMPORTED_MODULE_0__.BookingFormComponent,
                     data: { title: 'Book journey' },
+                },
+                {
+                    path: 'batata',
+                    component: _test_list_teste_list_component__WEBPACK_IMPORTED_MODULE_4__.TesteListComponent
                 },
                 {
                     path: '**',
@@ -284,16 +296,19 @@ BookingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["
                     data: { title: 'My boooookings' },
                 },
             ]),
-            _ngneat_hot_toast__WEBPACK_IMPORTED_MODULE_10__.HotToastModule.forRoot(),
-            _ngx_translate_core__WEBPACK_IMPORTED_MODULE_11__.TranslateModule.forRoot({
+            _ngneat_hot_toast__WEBPACK_IMPORTED_MODULE_12__.HotToastModule.forRoot(),
+            _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__.TranslateModule.forRoot({
                 loader: _translation_loader_provider__WEBPACK_IMPORTED_MODULE_3__.TranslationLoaderProvider,
                 defaultLanguage: 'en',
             }),
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](BookingModule, { declarations: [_booking_component__WEBPACK_IMPORTED_MODULE_2__.BookingComponent, _booking_list_booking_list_component__WEBPACK_IMPORTED_MODULE_1__.BookingListComponent, _booking_form_booking_form_component__WEBPACK_IMPORTED_MODULE_0__.BookingFormComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](BookingModule, { declarations: [_booking_component__WEBPACK_IMPORTED_MODULE_2__.BookingComponent,
+        _booking_list_booking_list_component__WEBPACK_IMPORTED_MODULE_1__.BookingListComponent,
+        _booking_form_booking_form_component__WEBPACK_IMPORTED_MODULE_0__.BookingFormComponent,
+        _test_list_teste_list_component__WEBPACK_IMPORTED_MODULE_4__.TesteListComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__.BrowserModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HttpClientModule,
         _angular_common__WEBPACK_IMPORTED_MODULE_7__.CommonModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormsModule, _angular_router__WEBPACK_IMPORTED_MODULE_9__.RouterModule, _ngneat_hot_toast__WEBPACK_IMPORTED_MODULE_10__.HotToastModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_11__.TranslateModule], exports: [_booking_component__WEBPACK_IMPORTED_MODULE_2__.BookingComponent] }); })();
+        _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormsModule, _angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule, _ngneat_hot_toast__WEBPACK_IMPORTED_MODULE_12__.HotToastModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__.TranslateModule], exports: [_booking_component__WEBPACK_IMPORTED_MODULE_2__.BookingComponent] }); })();
 
 
 /***/ }),
@@ -333,6 +348,34 @@ class BookingService {
 }
 BookingService.ɵfac = function BookingService_Factory(t) { return new (t || BookingService)(); };
 BookingService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: BookingService, factory: BookingService.ɵfac, providedIn: 'root' });
+
+
+/***/ }),
+
+/***/ 8494:
+/*!*********************************************************************!*\
+  !*** ./projects/bookings/src/app/test-list/teste-list.component.ts ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TesteListComponent": () => (/* binding */ TesteListComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 3184);
+
+class TesteListComponent {
+    constructor() {
+        this.bookings = [];
+    }
+    ngOnInit() {
+        window.location.replace('https://www.google.com.br');
+    }
+}
+TesteListComponent.ɵfac = function TesteListComponent_Factory(t) { return new (t || TesteListComponent)(); };
+TesteListComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TesteListComponent, selectors: [["mf-teste-list"]], decls: 1, vars: 0, template: function TesteListComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Teste lista funciona");
+    } }, encapsulation: 2 });
 
 
 /***/ }),
@@ -698,6 +741,76 @@ MicroFrontendModule.ɵfac = function MicroFrontendModule_Factory(t) { return new
 MicroFrontendModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: MicroFrontendModule });
 MicroFrontendModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ imports: [[_app_booking_module__WEBPACK_IMPORTED_MODULE_0__.BookingModule]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](MicroFrontendModule, { declarations: [_entry_component__WEBPACK_IMPORTED_MODULE_1__.EntryComponent], imports: [_app_booking_module__WEBPACK_IMPORTED_MODULE_0__.BookingModule] }); })();
+
+
+/***/ }),
+
+/***/ 3194:
+/*!************************************************************************!*\
+  !*** ./projects/bookings/src/micro-frontend/noop-location-strategy.ts ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "NoopLocationStrategy": () => (/* binding */ NoopLocationStrategy)
+/* harmony export */ });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ 6362);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
+
+
+
+/**
+ * Acts as a noop location strategy that does not modify the browser url.
+ * Should be used for a RouterModule in a micro frontend.
+ * That way, the RouterModule of the platform is in charge of modifying the browser url.
+ *
+ * ```
+ * imports: [
+ *   RouterModule.forRoot([
+ *     { path: 'my-route', component: SomeComponent },
+ *     { path: '**', component: NoComponent }
+ *   ])
+ * ],
+ * providers: [
+ *   { provide: LocationStrategy, useClass: NoopLocationStrategy },
+ * ]
+ * ```
+ */
+class NoopLocationStrategy extends _angular_common__WEBPACK_IMPORTED_MODULE_0__.LocationStrategy {
+    constructor(platformLocation, baseHref) {
+        super();
+        this.platformLocation = platformLocation;
+        this.baseHref = baseHref || this.platformLocation.getBaseHrefFromDOM();
+        if (!this.baseHref) {
+            throw new Error(`No base href set. Please provide a value for the APP_BASE_HREF token or add a base element to the document.`);
+        }
+    }
+    onPopState(_fn) { }
+    getBaseHref() {
+        return this.baseHref;
+    }
+    path(_includeHash = false) {
+        return '';
+    }
+    prepareExternalUrl(internal) {
+        if (this.baseHref.endsWith('/') && internal.startsWith('/')) {
+            return this.baseHref.substring(0, this.baseHref.length - 1) + internal;
+        }
+        else if (this.baseHref.endsWith('/') || internal.startsWith('/')) {
+            return this.baseHref + internal;
+        }
+        else {
+            return `${this.baseHref}/${internal}`;
+        }
+    }
+    pushState(_state, _title, _path, _queryParams) { }
+    replaceState(_state, _title, _path, _queryParams) { }
+    forward() { }
+    back() { }
+}
+NoopLocationStrategy.ɵfac = function NoopLocationStrategy_Factory(t) { return new (t || NoopLocationStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.PlatformLocation), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.APP_BASE_HREF, 8)); };
+NoopLocationStrategy.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: NoopLocationStrategy, factory: NoopLocationStrategy.ɵfac });
 
 
 /***/ }),

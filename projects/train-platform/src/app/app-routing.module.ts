@@ -5,17 +5,18 @@ import { JourneyModule } from '../journey/journey.module';
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    component: JourneySelectionComponent,
-    data: { title: 'Journeys' },
-  },
-  {
     path: 'bookings',
+    pathMatch: 'full',
     loadChildren: () =>
       import('./../micro-frontends/bookings-host.module').then(
         (m) => m.BookingsHostModule
       ),
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: JourneySelectionComponent,
+    data: { title: 'Journeys' },
   },
 ];
 

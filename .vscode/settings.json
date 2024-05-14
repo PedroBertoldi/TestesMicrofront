@@ -1,0 +1,6 @@
+{
+    "i18n-ally.localesPaths": [
+        "projects/bookings/src/assets/i18n",
+        "projects/train-platform/src/assets/i18n"
+    ]
+}
